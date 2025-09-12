@@ -3,7 +3,7 @@
  * Copyright: QUBYX Software Technologies LTD HK
  */
 
-#include "audi3dlutgenerator.h"
+#include "qubyx3dlutgenerator.h"
 
 #include <cmath>
 

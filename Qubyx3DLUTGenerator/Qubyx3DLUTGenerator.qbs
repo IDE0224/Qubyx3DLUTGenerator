@@ -1,8 +1,8 @@
 import qbs 1.0
 
 DynamicLibrary  {
-    id: Audi3DLUTGenerator
-    name: "Audi3DLUTGenerator"
+    id: Qubyx3DLUTGenerator
+    name: "Qubyx3DLUTGenerator"
 
     Depends { name: "cpp" }
     //builtByDefault: false
@@ -13,7 +13,7 @@ DynamicLibrary  {
         cpp.cxxFlags: base.concat(["-Werror=return-type", "-std=c++11"])
         cpp.libFlags: ["-static-libgcc", "-static-libstdc++"]
         cpp.defines: base.concat(["WIN32"])
-        cpp.linkerFlags: base.concat([Audi3DLUTGenerator.sourceDirectory + "/Audi3DLUTGenerator.def", "-s"])
+        cpp.linkerFlags: base.concat([Qubyx3DLUTGenerator.sourceDirectory + "/Qubyx3DLUTGenerator.def", "-s"])
     }
 
     Properties {
@@ -41,7 +41,7 @@ DynamicLibrary  {
     files: [
         "*.h",
         "*.cpp",
-        "Audi3DLUTGenerator.def",
+        "Qubyx3DLUTGenerator.def",
         "IccProfLib/*.h",
         "IccProfLib/*.cpp",
     ]

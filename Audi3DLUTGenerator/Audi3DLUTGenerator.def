@@ -1,3 +1,0 @@
-LIBRARY Audi3DLUTGenerator.dll
-EXPORTS
-generate3dLut

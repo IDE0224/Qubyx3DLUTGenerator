@@ -3,8 +3,8 @@
  * Copyright: QUBYX Software Technologies LTD HK
  */
 
-#ifndef AUDI3DLUTGENERATOR_H
-#define AUDI3DLUTGENERATOR_H
+#ifndef QUBYX3DLUTGENERATOR_H
+#define QUBYX3DLUTGENERATOR_H
 
 enum A3dLut_Status
 {
@@ -19,4 +19,4 @@ enum A3dLut_Status
 extern "C"
 A3dLut_Status generate3dLut(char* ga_profile, char* display_profile, int grid, unsigned int* rlut, unsigned int *glut, unsigned int *blut);
 
-#endif // AUDI3DLUTGENERATOR_H
+#endif // QUBYX3DLUTGENERATOR_H
