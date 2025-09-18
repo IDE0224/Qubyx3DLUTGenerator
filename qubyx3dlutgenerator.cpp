@@ -10,10 +10,13 @@
 #include "QubyxProfile.h"
 #include "qubyxprofilechain.h"
 
-Q3dLut_Status __attribute__((visibility("default"))) generate3dLut(
-    char* ga_profile, char* display_profile,
-    int grid, unsigned int* rlut,
-    unsigned int* glut, unsigned int* blut
+Q3dLut_Status generate3dLut(
+    char* ga_profile,
+    char* display_profile,
+    int grid,
+    unsigned int* rlut,
+    unsigned int* glut,
+    unsigned int* blut
 )
 {
     if (grid < 2)

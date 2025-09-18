@@ -13,6 +13,12 @@
 #include <stdlib.h>
 #include <sstream>
 #include <cmath>
+#include <algorithm>
+
+// Prevent Windows min/max macros from conflicting with std::min/std::max
+#ifndef NOMINMAX
+#define NOMINMAX
+#endif
 
 #ifdef USESAMPLEICCNAMESPACE
 namespace sampleICC {

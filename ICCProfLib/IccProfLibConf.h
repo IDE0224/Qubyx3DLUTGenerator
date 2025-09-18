@@ -88,7 +88,7 @@ namespace sampleICC {
 
 #define USE_WINDOWS_MB_SUPPORT
 #define WIN32_LEAN_AND_MEAN    // Exclude rarely-used stuff from Windows headers
-//#include <windows.h> //For Multibyte Translation Support
+#include <windows.h> // For Multibyte Translation Support
 
 #define ICC_BYTE_ORDER_LITTLE_ENDIAN
 
