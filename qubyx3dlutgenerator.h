@@ -16,7 +16,7 @@ enum Q3dLut_Status
     Q3dLut_Error_Other
 };
 
-extern "C"
+extern "C" __declspec(dllexport)
 Q3dLut_Status generate3dLut(char* ga_profile, char* display_profile, int grid, unsigned int* rlut, unsigned int* glut, unsigned int* blut);
 
 #endif // QUBYX3DLUTGENERATOR_H
